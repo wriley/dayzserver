@@ -1,0 +1,1 @@
+execVM "\z\addons\dayz_server\custom\devils_castle\objects.sqf";
