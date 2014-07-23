@@ -117,12 +117,14 @@ if (_type == "supply") then {
 	};
 	
 	// load structures
+	/*
 	_scount = count DZMSConStructures;
 	for "_x" from 0 to 30 do {
 		_sSelect = floor(random _sCount);
 		_item = DZMSConStructures select _sSelect;
 		_crate addMagazineCargoGlobal [_item,(round(random 2))];
 	};
+	*/
 };
 
 // Epoch Supply Crates (Large)
@@ -144,12 +146,14 @@ if (_type == "supplyL") then {
 	};
 	
 	// load structures
+	/*
 	_scount = count DZMSConStructures;
 	for "_x" from 0 to 60 do {
 		_sSelect = floor(random _sCount);
 		_item = DZMSConStructures select _sSelect;
 		_crate addMagazineCargoGlobal [_item,(round(random 2))];
 	};
+	*/
 };
 
 ///////////////////////////////////////////////////////////////////
