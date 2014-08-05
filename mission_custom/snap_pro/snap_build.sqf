@@ -15,6 +15,7 @@ _selectedAction = _this select 3 select 4;
 _cfg = (missionConfigFile >> "SnapBuilding" >> _classname);
 _whitelist = getArray (_cfg >> "snapTo");
 _points = getArray (_cfg >> "points");
+_radius = getNumber (_cfg >> "radius");
 
 //colors
 _objColorActive = "#(argb,8,8,3)color(0,0.92,0.06,1,ca)";
@@ -26,9 +27,9 @@ fnc_snapActionCleanup = {
 	_s1 = _this select 0;
 	_s2 = _this select 1;
 	_s3 = _this select 2;
-	player removeAction s_player_toggleSnap;
-	player removeAction s_player_toggleSnapSelect;
-	{player removeAction _x;} count s_player_toggleSnapSelectPoint;
+	player removeAction s_player_toggleSnap; s_player_toggleSnap = -1;
+	player removeAction s_player_toggleSnapSelect; s_player_toggleSnapSelect = -1;
+	if (count s_player_toggleSnapSelectPoint != 0) then {{player removeAction _x;} count s_player_toggleSnapSelectPoint; s_player_toggleSnapSelectPoint=[]; snapActions = -1;};
 	if (_s1 > 0) then {
 		s_player_toggleSnap = player addaction [format[("<t color=""#ffffff"">" + ("Snap: %1") +"</t>"),snapActionState],"custom\snap_pro\snap_build.sqf",[snapActionState,_object,_classname,_objectHelper],6,false,true];
 	};
@@ -58,7 +59,7 @@ fnc_initSnapPoints = {
 fnc_initSnapPointsNearby = {
 	_pos = getPosATL _object;
 	_findWhitelisted = []; _pointsNearby = [];
-	_findWhitelisted = nearestObjects [_pos,_whitelist,15]-[_object];
+	_findWhitelisted = nearestObjects [_pos,_whitelist,_radius]-[_object];
 	snapGizmosNearby = [];	
 	{	
 		_nearbyObject = _x;
@@ -224,8 +225,8 @@ fnc_initSnapTutorial = {
 
 				[
 					_bldTxtFinal, //structured text
-					[0.73 * safezoneW + safezoneX], //number - x
-					[0.65 * safezoneH + safezoneY], //number - y
+					0.73 * safezoneW + safezoneX, //number - x
+					0.65 * safezoneH + safezoneY, //number - y
 					30, //number - duration
 					1, // number - fade in time
 					0, // number - delta y
