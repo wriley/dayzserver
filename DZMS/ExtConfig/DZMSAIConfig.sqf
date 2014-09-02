@@ -7,7 +7,7 @@
 
 ///////////////////////////////////////////////
 // Array of skin classnames for the AI to use
-DZMSBanditSkins = ["Bandit1_DZ","BanditW1_DZ","BanditW2_DZ","Camo1_DZ","Sniper1_DZ","Soldier1_DZ","Survivor2_DZ","SurvivorW2_DZ","GUE_Soldier_MG_DZ","GUE_Soldier_Sniper_DZ","GUE_Soldier_Crew_DZ","GUE_Soldier_2_DZ","RU_Policeman_DZ","Pilot_EP1_DZ","Haris_Press_EP1_DZ","Ins_Soldier_GL_DZ","GUE_Commander_DZ","Functionary1_EP1_DZ","Priest_DZ","Rocker1_DZ","Rocker2_DZ","Rocker3_DZ","Rocker4_DZ","TK_INS_Warlord_EP1_DZ","TK_INS_Soldier_EP1_DZ","Soldier_Sniper_PMC_DZ","Soldier_TL_PMC_DZ","FR_OHara_DZ","FR_Rodriguez_DZ","CZ_Soldier_Sniper_EP1_DZ","Graves_Light_DZ","Bandit2_DZ","SurvivorWcombat_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","Soldier_Bodyguard_AA12_PMC_DZ","GUE_Soldier_CO_DZ"];
+DZMSBanditSkins = ["GUE_Soldier_MG_DZ","GUE_Soldier_Crew_DZ","GUE_Soldier_CO_DZ","GUE_Soldier_2_DZ","Ins_Soldier_GL_DZ"];
 
 ////////////////////////
 // Array of AI Skills
@@ -77,16 +77,16 @@ DZMSSkills4 = [
 ];
 
 DZMSSkills5 = [	
-	["aimingAccuracy",0.35,0.25],
-	["aimingShake",0.95,0.95],
-	["aimingSpeed",0.95,0.90],
-	["endurance",0.95,0.90],
-	["spotDistance",0.95,0.85],
-	["spotTime",0.95,0.85],
-	["courage",0.95,1.00],
-	["reloadSpeed",0.95,0.90],
-	["commanding",0.95,0.90],
-	["general",0.95,1.00]
+	["aimingAccuracy",0.5,0.25],
+	["aimingShake",0.99,0.95],
+	["aimingSpeed",0.99,0.90],
+	["endurance",0.99,0.90],
+	["spotDistance",0.99,0.85],
+	["spotTime",0.99,0.85],
+	["courage",0.99,1.00],
+	["reloadSpeed",0.99,0.90],
+	["commanding",0.99,0.90],
+	["general",0.99,1.00]
 ];
 
 //////////////////////////////////////////////////////////////
@@ -185,23 +185,23 @@ DZMSGear0 = [
 ];
 
 DZMSGear1 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
-["ItemKnife","ItemFlashlight"]
+["ItemBandage","ItemBandage","ItemPainkiller","ItemSodaCoke"],
+["ItemToolbox","ItemHatchet"]
 ];
 
 DZMSGear2 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
-["ItemKnife","ItemFlashlight"]
+["ItemBandage","ItemBandage","ItemPainkiller","FoodCanSardines"],
+["ItemKnife","ItemCompass"]
 ];
 
 DZMSGear3 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
-["ItemKnife","ItemFlashlight"]
+["ItemBandage","ItemBandage","ItemMorphine"],
+["ItemCrowbar","ItemMap"]
 ];
 
 DZMSGear4 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
-["ItemKnife","ItemFlashlight"]
+["ItemBandage","ItemBandage","ItemEpinephrine","ItemWaterbottleBoiled"],
+["ItemKnife","ItemMatchbox"]
 ];
 
 ////////////////////////////////////////////////////////////
