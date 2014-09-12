@@ -13,7 +13,7 @@ DZAI_dynAISpawns = false;
 
 DZAI_maxHeliPatrols = 4;
 DZAI_heliUnitLevel = 3;
-DZAI_heliList = [["AH6X_DZ",4]];
+DZAI_heliList = [["AH6X_DZ",4],["MH60S_DZ",1],["Mi17_DZ",1], ["UH1H_DZ",1], ["UH1Y_DZ", 1], ["UH60M_EP1_DZ", 1]];
 DZAI_airWeapons = [
 	[
 		"AH6X_DZ"
@@ -29,16 +29,11 @@ DZAI_vehUnitLevel = 3;
 DZAI_vehGunnerUnits = 2;
 DZAI_vehCargoUnits = 0;
 DZAI_vehList = [
-	["HMMWV_M1151_M2_CZ_DES_EP1_DZE",1],
-	["HMMWV_M998A2_SOV_DES_EP1_DZE",1],
-	["LandRover_MG_TK_EP1_DZE",1],
-	["LandRover_Special_CZ_EP1_DZE",1],
-	["UAZ_MG_TK_EP1_DZE",2],
-	["ArmoredSUV_PMC_DZE",1],
-	["Offroad_DSHKM_Gue_DZE",1],
-	["Pickup_PK_GUE_DZE",2],
-	["Pickup_PK_INS_DZE",2],
-	["Pickup_PK_TK_GUE_EP1_DZE",1]
+	["UAZ_MG_TK_EP1_DZ",2],
+	["Offroad_DSHKM_Gue_DZ",1],
+	["Pickup_PK_GUE_DZ",2],
+	["Pickup_PK_INS_DZ",2],
+	["Pickup_PK_TK_GUE_EP1_DZ",1]
 ];
 
 DZAI_banAIWeapons = ["MeleeCrowbar","MeleeFishingPole","MeleeFlashlight","MeleeFlashlightRed","MeleeHatchet","MeleeMachete","MeleeHatchet_DZE","MeleeSledge"];
