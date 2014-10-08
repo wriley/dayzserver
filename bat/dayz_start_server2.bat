@@ -1,8 +1,10 @@
 @echo off
 
-set PORT=CHANGEME
-set MAP="CHANGEME"
-set DB="CHANGEME"
+set PORT=23202
+set MAP="chernarus"
+set DB="dayz_2.chernarus"
+set DBHOST="CHANGEME"
+set DBPASS="CHANGEME"
 
 echo Checking for already running ArmA2 server process...
 set PID=""
@@ -42,6 +44,10 @@ FOR %%f in (*.log) DO move /y %%f logs\%dateseed%-%%f >nul 2>&1
 
 s:
 cd "\src\DayZ-Private-master"
+
+REM echo Running database script...
+REM C:\strawberry\perl\bin\perl.exe db_dayz_epoch.pl --db %DB% --host %DBHOST% --user dayz --pass %DBPASS% > "c:\steam\steamapps\common\arma 2 operation arrowhead\dayz_2.%MAP%\db_dayz.log" 2>&1
+
 
 echo Updating bans...
 C:\strawberry\perl\bin\perl.exe update_bans.pl --dwarden --mybans "c:\Documents and Settings\Computer User\Desktop\mybans.txt" --save "c:\steam\steamapps\common\arma 2 operation arrowhead\dayz_2.%MAP%\BattlEye\bans.txt" --verbose > "c:\steam\steamapps\common\arma 2 operation arrowhead\dayz_2.%MAP%\update_bans.log" 2>&1
