@@ -1,2 +1,2 @@
-arma2oaserver.exe -port=23202 -config=dayz_2.chernarus\server.cfg -cfg=dayz_2.chernarus\basic.cfg -profiles=dayz_2.chernarus -name=dayz_2.chernarus "-mod=@DayZ_Epoch;@DayZ_Epoch_Server;" -noPause -noSound -noCB -cpuCount=2 -maxMem=2047
+arma2oaserver.exe -port=23202 -config=dayz_2.chernarus\server.cfg -cfg=dayz_2.chernarus\basic.cfg -profiles=dayz_2.chernarus -name=dayz_2.chernarus "-mod=@DayZ_Epoch;@DayZ_Epoch_Server" -noPause -noSound -noCB -cpuCount=2 -exThreads=7 -maxMem=2047
 exit

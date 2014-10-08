@@ -6,8 +6,6 @@ brightness=1;
 shadingQuality=7;
 shadowQuality=3;
 maxSamplesPlayed=32;
-hudWp=0;
-weaponCursor=0;
 class Difficulties
 {
 	class Recruit
@@ -85,20 +83,20 @@ class Difficulties
 			autoSpot=0;
 			cameraShake=1;
 			clockIndicator=0;
-			deathMessages=1;
+			deathMessages=0;
 			enemyTag=0;
 			friendlyTag=0;
-			hud=1;
+			hud=0;
 			hudGroupInfo=0;
 			hudPerm=0;
 			hudWp=0;
 			hudWpPerm=0;
 			map=0;
-			netStats=1;
+			netStats=0;
 			tracers=0;
 			ultraAI=0;
 			unlimitedSaves=0;
-			vonId=1;
+			vonId=0;
 			weaponCursor=0;
 		};
 		skillFriendly=1;

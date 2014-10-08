@@ -1,4 +1,4 @@
-DZAI_debugLevel = 1;
+DZAI_debugLevel = 2;
 
 DZAI_weaponNoise = true;
 DZAI_lastManStanding = true;
@@ -13,7 +13,15 @@ DZAI_dynAISpawns = false;
 
 DZAI_maxHeliPatrols = 4;
 DZAI_heliUnitLevel = 3;
-DZAI_heliList = [["AH6X_DZ",4],["MH60S_DZ",1],["Mi17_DZ",1], ["UH1H_DZ",1], ["UH1Y_DZ", 1], ["UH60M_EP1_DZ", 1]];
+DZAI_heliList = [
+	["AH6X_DZ",4],
+	["MH60S_DZ",1],
+	["Mi17_DZ",1],
+	["UH1H_DZ",1],
+	["UH1Y_DZ",1],
+	["UH60M_EP1_DZ",1]
+];
+
 DZAI_airWeapons = [
 	[
 		"AH6X_DZ"
